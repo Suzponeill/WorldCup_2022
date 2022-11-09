@@ -60,7 +60,7 @@ def draft_teams(participant_instance_list, teams_list):
             best_available_team = min(available_teams_in_seed, key=lambda x: x.world_rank)
             best_available_rank = best_available_team.world_rank
             if best_available_team.group not in participant.teams_list:
-                participant.teams_list.append([best_available_team.team_name, best_available_team.seed, best_available_team.group])
+                participant.teams_list.append(best_available_team)
                 best_available_team.assigned = participant.name
             else:
                 while len(participant.teams_list) < seed:
@@ -70,19 +70,23 @@ def draft_teams(participant_instance_list, teams_list):
                         best_available_rank +=2
                     next_best_team = teams_list.get(key=best_available_rank)
                     if next_best_team.group not in participant.teams_list:
-                        participant.teams_list.append([best_available_team.team_name, best_available_team.seed, best_available_team.group])
+                        participant.teams_list.append(best_available_team)
                         best_available_team.assigned = participant.name
                     else:
                         continue
         seed += 1
     participant_dicts_list = [participant.participant_dict() for participant in participant_instance_list]
-
+    team_dict_list = [team.make_team_dict() for team in teams_list]
     return participant_dicts_list
 
                     
 # print(json.dumps(
-print(json.dumps(assign_draft_position(participant_list), indent=2))
+assign_draft_position(participant_list)
 
-print(draft_teams(participant_list, teams_list))
+
+print(json.dumps(draft_teams(participant_list, teams_list), indent=2))
+
+
+print(json.dumps(([team.make_team_dict() for team in teams_list]), indent=2))
 
 

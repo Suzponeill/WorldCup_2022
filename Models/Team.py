@@ -1,5 +1,5 @@
 class Team:
-    def __init__(self, team_name, group, world_rank, seed, assigned = None):
+    def __init__(self, team_name, group, world_rank, seed, assigned = ""):
         self.team_name = team_name
         self.group = group
         self.world_rank = world_rank
