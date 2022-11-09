@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Patrick",
+        "draft_position": 1,
+        "teams_list": []
+    },
+    {
+        "name": "Suz",
+        "draft_position": 5,
+        "teams_list": []
+    },
+    {
+        "name": "John",
+        "draft_position": 3,
+        "teams_list": []
+    },
+    {
+        "name": "Hugh",
+        "draft_position": 4,
+        "teams_list": []
+    },
+    {
+        "name": "Brad",
+        "draft_position": 6,
+        "teams_list": []
+    },
+    {
+        "name": "Diane",
+        "draft_position": 7,
+        "teams_list": []
+    },
+    {
+        "name": "Nate",
+        "draft_position": 8,
+        "teams_list": []
+    },
+    {
+        "name": "Jordan",
+        "draft_position": 2,
+        "teams_list": []
+    }
+]

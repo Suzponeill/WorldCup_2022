@@ -79,12 +79,15 @@ def draft_teams(participant_instance_list, teams_list):
     return participant_dicts_list
 
                     
-assign_draft_position(participant_list)
+draft_position = assign_draft_position(participant_list)
+draft_results = draft_teams(participant_list, teams_list)
 
+#export draft_position to .json file
+with open('draft_position.json', 'w', encoding='utf-8') as f:
+    json.dump(draft_position, f, ensure_ascii=False, indent = 4)
 
-print(json.dumps(draft_teams(participant_list, teams_list), indent=2))
-
-
-# print(json.dumps(([team.make_team_dict() for team in teams_list]), indent=2))
+#export draft_position to .json file
+with open('draft_results.json', 'w', encoding='utf-8') as f:
+    json.dump(draft_results, f, ensure_ascii=False, indent = 4)
 
 

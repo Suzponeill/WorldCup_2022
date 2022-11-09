@@ -1,0 +1,274 @@
+[
+    {
+        "name": "Nate",
+        "draft_position": 8,
+        "teams_list": [
+            {
+                "team_name": "Portugal",
+                "world_rank": 9,
+                "group": "H",
+                "seed": 1,
+                "assigned": "Nate"
+            },
+            {
+                "team_name": "Denmark",
+                "world_rank": 10,
+                "group": "D",
+                "seed": 2,
+                "assigned": "Nate"
+            },
+            {
+                "team_name": "Equador",
+                "world_rank": 44,
+                "group": "A",
+                "seed": 3,
+                "assigned": "Nate"
+            },
+            {
+                "team_name": "Iran",
+                "world_rank": 20,
+                "group": "B",
+                "seed": 4,
+                "assigned": "Nate"
+            }
+        ]
+    },
+    {
+        "name": "Diane",
+        "draft_position": 7,
+        "teams_list": [
+            {
+                "team_name": "Netherlands",
+                "world_rank": 8,
+                "group": "A",
+                "seed": 1,
+                "assigned": "Diane"
+            },
+            {
+                "team_name": "Germany",
+                "world_rank": 11,
+                "group": "E",
+                "seed": 2,
+                "assigned": "Diane"
+            },
+            {
+                "team_name": "Tunisia",
+                "world_rank": 30,
+                "group": "D",
+                "seed": 3,
+                "assigned": "Diane"
+            },
+            {
+                "team_name": "Canada",
+                "world_rank": 41,
+                "group": "F",
+                "seed": 4,
+                "assigned": "Diane"
+            }
+        ]
+    },
+    {
+        "name": "Brad",
+        "draft_position": 6,
+        "teams_list": [
+            {
+                "team_name": "Spain",
+                "world_rank": 7,
+                "group": "E",
+                "seed": 1,
+                "assigned": "Brad"
+            },
+            {
+                "team_name": "Croatia",
+                "world_rank": 12,
+                "group": "F",
+                "seed": 2,
+                "assigned": "Brad"
+            },
+            {
+                "team_name": "Poland",
+                "world_rank": 26,
+                "group": "C",
+                "seed": 3,
+                "assigned": "Brad"
+            },
+            {
+                "team_name": "Australia",
+                "world_rank": 38,
+                "group": "D",
+                "seed": 4,
+                "assigned": "Brad"
+            }
+        ]
+    },
+    {
+        "name": "Suz",
+        "draft_position": 5,
+        "teams_list": [
+            {
+                "team_name": "England",
+                "world_rank": 5,
+                "group": "B",
+                "seed": 1,
+                "assigned": "Suz"
+            },
+            {
+                "team_name": "Mexico",
+                "world_rank": 13,
+                "group": "C",
+                "seed": 2,
+                "assigned": "Suz"
+            },
+            {
+                "team_name": "Korea Republic",
+                "world_rank": 28,
+                "group": "H",
+                "seed": 3,
+                "assigned": "Suz"
+            },
+            {
+                "team_name": "Costa Rica",
+                "world_rank": 31,
+                "group": "E",
+                "seed": 4,
+                "assigned": "Suz"
+            }
+        ]
+    },
+    {
+        "name": "Hugh",
+        "draft_position": 4,
+        "teams_list": [
+            {
+                "team_name": "France",
+                "world_rank": 4,
+                "group": "D",
+                "seed": 1,
+                "assigned": "Hugh"
+            },
+            {
+                "team_name": "Uruguay",
+                "world_rank": 14,
+                "group": "H",
+                "seed": 2,
+                "assigned": "Hugh"
+            },
+            {
+                "team_name": "Japan",
+                "world_rank": 24,
+                "group": "E",
+                "seed": 3,
+                "assigned": "Hugh"
+            },
+            {
+                "team_name": "Cameroon",
+                "world_rank": 43,
+                "group": "G",
+                "seed": 4,
+                "assigned": "Hugh"
+            }
+        ]
+    },
+    {
+        "name": "John",
+        "draft_position": 3,
+        "teams_list": [
+            {
+                "team_name": "Argentina",
+                "world_rank": 3,
+                "group": "C",
+                "seed": 1,
+                "assigned": "John"
+            },
+            {
+                "team_name": "Switzerland",
+                "world_rank": 15,
+                "group": "G",
+                "seed": 2,
+                "assigned": "John"
+            },
+            {
+                "team_name": "Morocco",
+                "world_rank": 22,
+                "group": "F",
+                "seed": 3,
+                "assigned": "John"
+            },
+            {
+                "team_name": "Qatar",
+                "world_rank": 50,
+                "group": "A",
+                "seed": 4,
+                "assigned": "John"
+            }
+        ]
+    },
+    {
+        "name": "Jordan",
+        "draft_position": 2,
+        "teams_list": [
+            {
+                "team_name": "Belgium",
+                "world_rank": 2,
+                "group": "F",
+                "seed": 1,
+                "assigned": "Jordan"
+            },
+            {
+                "team_name": "USA",
+                "world_rank": 16,
+                "group": "B",
+                "seed": 2,
+                "assigned": "Jordan"
+            },
+            {
+                "team_name": "Serbia",
+                "world_rank": 21,
+                "group": "G",
+                "seed": 3,
+                "assigned": "Jordan"
+            },
+            {
+                "team_name": "Suadi Arabia",
+                "world_rank": 51,
+                "group": "C",
+                "seed": 4,
+                "assigned": "Jordan"
+            }
+        ]
+    },
+    {
+        "name": "Patrick",
+        "draft_position": 1,
+        "teams_list": [
+            {
+                "team_name": "Brazil",
+                "world_rank": 1,
+                "group": "G",
+                "seed": 1,
+                "assigned": "Patrick"
+            },
+            {
+                "team_name": "Senegal",
+                "world_rank": 18,
+                "group": "A",
+                "seed": 2,
+                "assigned": "Patrick"
+            },
+            {
+                "team_name": "Wales",
+                "world_rank": 19,
+                "group": "B",
+                "seed": 3,
+                "assigned": "Patrick"
+            },
+            {
+                "team_name": "Ghana",
+                "world_rank": 61,
+                "group": "H",
+                "seed": 4,
+                "assigned": "Patrick"
+            }
+        ]
+    }
+]
