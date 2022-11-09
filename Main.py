@@ -49,44 +49,42 @@ def draft_teams(participant_instance_list, teams_list):
     seed = 1
 
     while seed < 5:
+        # reverse the draft order on each iteration
         if seed % 2 != 0:
             participant_instance_list = sorted(participant_instance_list, key=lambda x: x.draft_position, reverse=False)
         else:
             participant_instance_list = sorted(participant_instance_list, key=lambda x: x.draft_position, reverse=True)
+        
+        # Iterate over participants
         for participant in participant_instance_list:
-            # print(participant.name)
+
+            participant_groups = []
+            for team in participant.teams_list:
+                for group in team.group:
+                    participant_groups.append(group)
+
+            # Determine the best team to assign to the participant in the given seed
             available_teams = list(filter(lambda x: not x.assigned, teams_list))
             available_teams_in_seed = list(filter(lambda y: (y.seed==seed), available_teams))
-            best_available_team = min(available_teams_in_seed, key=lambda x: x.world_rank)
-            best_available_rank = best_available_team.world_rank
-            if best_available_team.group not in participant.teams_list:
-                participant.teams_list.append(best_available_team)
-                best_available_team.assigned = participant.name
-            else:
-                while len(participant.teams_list) < seed:
-                    if best_available_rank +1 in teams_dicts_list["world_rank"]:
-                        best_available_rank += 1
-                    else:
-                        best_available_rank +=2
-                    next_best_team = teams_list.get(key=best_available_rank)
-                    if next_best_team.group not in participant.teams_list:
-                        participant.teams_list.append(best_available_team)
-                        best_available_team.assigned = participant.name
-                    else:
-                        continue
+            available_teams_in_seed_no_repeat_groups = list(filter(lambda z: (z.group not in participant_groups), available_teams_in_seed))
+            if len(available_teams_in_seed_no_repeat_groups) == 0:
+                return f"No solution without repeat groups."
+
+            best_available_team = min(available_teams_in_seed_no_repeat_groups, key=lambda x: x.world_rank)
+            participant.teams_list.append(best_available_team)
+            best_available_team.assigned = participant.name   
         seed += 1
+
     participant_dicts_list = [participant.participant_dict() for participant in participant_instance_list]
-    team_dict_list = [team.make_team_dict() for team in teams_list]
     return participant_dicts_list
 
                     
-# print(json.dumps(
 assign_draft_position(participant_list)
 
 
 print(json.dumps(draft_teams(participant_list, teams_list), indent=2))
 
 
-print(json.dumps(([team.make_team_dict() for team in teams_list]), indent=2))
+# print(json.dumps(([team.make_team_dict() for team in teams_list]), indent=2))
 
 
